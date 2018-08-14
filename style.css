@@ -1,0 +1,70 @@
+*{
+	font-family: 'Open Sans', sans-serif;
+}
+nav a:hover { 
+    background-color: #FFF;
+    color: #000;
+}
+.nav{
+	z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.link_blanco{
+	color: #FFF;
+	font-size: 1.25rem;
+}
+
+.title_carousel{
+	text-align: center;
+	top: 37%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    color: white;
+}
+
+.text_carousel{
+	top: 50%;
+	padding:0px 10% 0px 10%;
+}
+.titulo{
+	font-size: 2.5rem;
+}
+.parrafo{
+	font-size: 1.25rem;
+}
+.boton_main{
+	top: 80%;
+}
+#carouselExampleControls > div > div.carousel-item.active > div > button{
+	background-color: #512182;
+	border-color: #512182; 
+}
+#carouselExampleControls > div > div.carousel-item.active > div > button:hover{
+	background-color: #200d35;
+	border-color: #200d35; 
+}
+.titulo1{
+	background-color: #5e2697;
+	color: #FFF;
+}
+.boton_pregunta{
+	border-top-left-radius:5px !important;
+	border-bottom-left-radius:5px !important;
+	background-color: #FFF;
+	color:#5e2697;
+}
+.pregunta{
+	font-size: 1.25rem;
+	font-weight: bold; 
+	margin-top: 0.5rem;
+	margin-right: 1rem !important;
+}
+body > section.page1 > div > div.container-fluid > div > div.title_carousel.boton_main > button{
+	background-color: #512182;
+	border-color: #512182;
+	padding: 2%;
+}
