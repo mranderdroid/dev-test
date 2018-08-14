@@ -1,3 +1,6 @@
+.os-animation{
+	opacity:0;
+}
 *{
 	font-family: 'Open Sans', sans-serif;
 }
@@ -36,20 +39,19 @@ nav a:hover {
 .parrafo{
 	font-size: 1.25rem;
 }
-.boton_main{
+.boton_abajo{
 	top: 80%;
-}
-#carouselExampleControls > div > div.carousel-item.active > div > button{
-	background-color: #512182;
-	border-color: #512182; 
-}
-#carouselExampleControls > div > div.carousel-item.active > div > button:hover{
-	background-color: #200d35;
-	border-color: #200d35; 
 }
 .titulo1{
 	background-color: #5e2697;
 	color: #FFF;
+}
+.btn:focus{
+	
+}
+.btn-primary{
+	background-color: #512182;
+    border-color: #512182;
 }
 .boton_pregunta{
 	border-top-left-radius:5px !important;
@@ -63,8 +65,51 @@ nav a:hover {
 	margin-top: 0.5rem;
 	margin-right: 1rem !important;
 }
-body > section.page1 > div > div.container-fluid > div > div.title_carousel.boton_main > button{
+.page2{
 	background-color: #512182;
-	border-color: #512182;
-	padding: 2%;
+	color: #FFF;
+}
+.page2 .parrafo{
+	text-align: left;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+.boton_main_2{
+	font-weight: bold;
+    padding: 10px 35px 10px 35px;
+    border: 1px solid #411f63;
+    border-top: 1px solid #722fb5;
+    text-align: center;
+    left: 0;
+    background-color: #512182;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0,0,0,.1);
+    transition: all .3s;
+    transition-timing-function: ease-in-out;
+}
+.boton_main_2:hover{
+	cursor: pointer;
+	background-color: #431b6c;
+    color: #FFF;
+    box-shadow: 0px 4px 14px 0px rgba(0,0,0,.4);
+}
+.page3{
+	background-color: #431b6c;
+	color: #FFF;
+}
+.card-text{
+	color:#b2b6c1;
+}
+.card{
+	border-radius: 0px;
+	border: 0px;
+}
+.card-img-top{
+	border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+.card:hover{
+	box-shadow: 0px 10px 11px 4px rgba(0,0,0,.2)!important;
+	transition: all .3s;
+    transition-timing-function: ease-in-out;
 }
