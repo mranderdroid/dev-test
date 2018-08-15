@@ -70,3 +70,8 @@ function onScrollInit( items, trigger ) {
         });
     }
 onScrollInit( $('.os-animation') );
+var options = {
+    animateThreshold: 100,
+    scrollPollInterval: 20
+}
+$('.aniview').AniView(options);

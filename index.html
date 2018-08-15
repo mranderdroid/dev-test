@@ -11,50 +11,56 @@
 </head>
 
 <body>
-  <nav>
-    <ul class="nav justify-content-end nav-pills mr-5 mt-5">
-      <li class="nav-item">
-        <a class="nav-link mr-5 btn-lg link_blanco" href="#">Page 1</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mr-5 btn-lg link_blanco" href="#">Page 2</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link mr-5 btn-lg link_blanco" href="#">Page 3</a>
-      </li>
-      <li class="nav-item">
-        <a class="btn btn-lg mr-5 link_blanco" href="#">Top</a>
-      <li class="nav-item">
-        <a class="btn btn-outline-light btn-lg mr-5 link_blanco" href="#">Bottom</a>
-      </li>
-    </ul>
-  </nav>
-
-  <section>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand mt-5 ml-5" href="#">Sigma</a>
+        <button class="navbar-toggler collapsed mt-5 mr-5" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+          <ul class="navbar-nav ml-auto mt-5 mr-5">
+            <li class="nav-item active mr-5">
+              <a class="link_activado nav-link" href="#page1">Page 1<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active mr-5">
+              <a class="link_activado nav-link" href="#page2">Page 2 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active mr-5">
+              <a class="link_activado nav-link" href="#page3">Page 3 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active mr-5">
+              <a class="link_activado nav-link" href="#top">Top<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active mr-5">
+              <a class="link_activado nav-link" href="#bottom">Bottom <span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  <section class="slider_principal" id="top">
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" id="image-1" src="" alt="First slide">
+      <img class="d-block w100" id="image-1" src="" alt="First slide">
       <h1 id="title-1" class="title_carousel titulo"></h1>
       <p class="title_carousel text_carousel parrafo" id="desc-1"></p>
-      <div class="title_carousel boton_abajo">
-        <button type="button" class="boton_main_2">Go to bottom</button>
+      <div class="boton_abajo">
+        <a href="#bottom" style="text-decoration: none; color: #FFF;"><button type="button" class="boton_main_2">Go to bottom</button></a>
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" id="image-2" src=""" alt="Second slide">
+      <img class="d-block w100" id="image-2" src="" alt="Second slide">
       <h1 id="title-2" class="title_carousel titulo"></h1>
       <p class="title_carousel text_carousel parrafo" id="desc-2"></p>
-      <div class="title_carousel boton_abajo">
-      <button type="button" class="boton_main_2">Go to bottom</button>
+      <div class="boton_abajo">
+        <a href="#bottom" style="text-decoration: none; color: #FFF;"><button type="button" class="boton_main_2">Go to bottom</button></a>
       </div>
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" id="image-3" src="" alt="Third slide">
+      <img class="d-block w100" id="image-3" src="" alt="Third slide">
       <h1 id="title-3" class="title_carousel titulo"></h1>
       <p class="title_carousel text_carousel parrafo" id="desc-3"></p>
-      <div class="title_carousel boton_abajo">
-      <button type="button" class="boton_main_2">Go to bottom</button>
+      <div class="boton_abajo">
+        <a href="#bottom" style="text-decoration: none; color: #FFF;"><button type="button" class="boton_main_2">Go to bottom</button></a>
       </div>
     </div>
   </div>
@@ -69,10 +75,10 @@
   </div>
   </section>
 
-  <section class="page1">
-    <div class="position-relative overflow-hidden p-3 p-md-5  text-center titulo1">
+  <section class="page1" id="page1">
+    <div class="position-relative overflow-hidden p-3 p-md-5  text-center">
       <div class="col-md-6 p-lg-1 mx-auto my-5">
-        <h1 class="display-5 font-weight-normal">PAGE 1 <b>CHECK FIELDS</b></h1>
+        <h1 class="display-5 font-weight-normal os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0.7s">PAGE 1 <b>CHECK FIELDS</b></h1>
       </div>
       <div class="container-fluid">
         <div class="row">
@@ -112,7 +118,7 @@
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mb-5">
             <div class="btn-group" role="group">
                <h3 class="mr-3 pregunta"> QUESTION 1... </h3>
                <div class="form-group">
@@ -124,7 +130,7 @@
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mb-5">
             <div class="btn-group" role="group">
                <h3 class="mr-3 pregunta"> QUESTION 1... </h3>
                <div class="form-group">
@@ -136,7 +142,7 @@
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 mb-5">
             <div class="btn-group" role="group">
                <h3 class="mr-3 pregunta"> QUESTION 1... </h3>
                <div class="form-group">
@@ -149,17 +155,17 @@
           </div>
           <br><br><br><br>
           <div class="mx-auto">
-            <button type="button" class="boton_main_2">Go to bottom</button>
+            <a href="#bottom" style="text-decoration: none; color: #FFF;"><button type="button" class="boton_main_2">Go to bottom</button></a>
           </div>
         </div>
       </div>
       <br class="margen_br"><br class="margen_br"><br class="margen_br"><br class="margen_br"><br class="margen_br">
     </div>
   </section>
-  <section class="page2">
+  <section class="page2" id="page2">
     <div class="position-relative overflow-hidden p-3 p-md-5  text-center">
       <div class="col-md-5 p-lg-1 mx-auto my-5">
-        <h1 class="display-6 font-weight-normal">PAGE 2 <b>TEXT</b></h1>
+        <h1 class="display-6 font-weight-normal os-animation" data-os-animation="fadeInLeft" data-os-animation-delay="0.2s">PAGE 2 <b>TEXT</b></h1>
       </div>
       <div class="container-fluid">
         <div class="row">
@@ -174,38 +180,63 @@
             <p class="parrafo">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
           </div>
           <div class="mt-5 mx-auto">
-            <button type="button" class="boton_main_2">Go to bottom</button>
+            <a href="#bottom" style="text-decoration: none; color: #FFF;"><button type="button" class="boton_main_2">Go to bottom</button></a>
           </div>
         </div>
         </div> 
       </div>
     </div>  
   </section>
-  <section class="page3">
+  <section class="page3" id="page3">
     <div class="position-relative overflow-hidden p-3 p-md-5  text-center">
       <div class="col-md-5 p-lg-1 mx-auto my-5">
         <h1 class="display-6 font-weight-normal">PAGE 3 <b>JUST IMAGES</b></h1>
       </div>
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-4 mb-5">
+            <div class="card">
               <img class="card-img-top" src="img/card-1.png" alt="Card image cap">
               <div class="card-body">
                 <p class="card-text">SO NICE</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            
+          <div class="col-md-4 mb-5">
+            <div class="card">
+              <img class="card-img-top" src="img/card-2.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">SO COOL</p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            
+          <div class="col-md-4 mb-5">
+            <div class="card">
+              <img class="card-img-top" src="img/card-3.png" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">SO PEACEFUL</p>
+              </div>
+            </div>
+          </div> 
+          <div class="mt-5 mx-auto">
+            <a href="#bottom" style="text-decoration: none; color: #FFF;"><button type="button" class="boton_main_2">Go to bottom</button></a>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <section class="page4" id="bottom">
+    <div class="position-relative overflow-hidden p-3 p-md-5  text-center">
+      <h2>THANK <span style="font-weight: bold;">YOU</span></h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto mt-5">
+          <a href="#top" style="text-decoration: none; color: #FFF;"><button type="button" class="boton_main_2">Go to header</button>
+        </div>
+      </div>
+    </div>
+  </section> 
 </body>
   <script defer src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
